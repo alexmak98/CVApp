@@ -25,6 +25,7 @@
 		CE3BA7892181D9AE00E1C70B /* tb_ic_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3BA77C2181D9AD00E1C70B /* tb_ic_menu.png */; };
 		CE3BA78A2181D9AE00E1C70B /* tb_ic_accelerated_clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3BA77D2181D9AE00E1C70B /* tb_ic_accelerated_clicked.png */; };
 		CE3BA78B2181D9AE00E1C70B /* tb_ic_accelerated.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3BA77E2181D9AE00E1C70B /* tb_ic_accelerated.png */; };
+		CEB4611B21834891005D2724 /* buttonClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CEB4611A21834891005D2724 /* buttonClick.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CE3BA77C2181D9AD00E1C70B /* tb_ic_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_ic_menu.png; sourceTree = "<group>"; };
 		CE3BA77D2181D9AE00E1C70B /* tb_ic_accelerated_clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_ic_accelerated_clicked.png; sourceTree = "<group>"; };
 		CE3BA77E2181D9AE00E1C70B /* tb_ic_accelerated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tb_ic_accelerated.png; sourceTree = "<group>"; };
+		CEB4611A21834891005D2724 /* buttonClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonClick.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				CE3BA7492181013C00E1C70B /* Main.storyboard */,
 				CE3BA74C2181013D00E1C70B /* Assets.xcassets */,
 				CE3BA7712181D94300E1C70B /* pictures */,
+				CEB4611A21834891005D2724 /* buttonClick.mp3 */,
 				CE3BA74E2181013D00E1C70B /* LaunchScreen.storyboard */,
 				CE3BA7512181013D00E1C70B /* Info.plist */,
 			);
@@ -172,6 +175,7 @@
 				CE3BA7842181D9AE00E1C70B /* tb_ic_menu_clicked.png in Resources */,
 				CE3BA7862181D9AE00E1C70B /* tb_ic_pause.png in Resources */,
 				CE3BA7502181013D00E1C70B /* LaunchScreen.storyboard in Resources */,
+				CEB4611B21834891005D2724 /* buttonClick.mp3 in Resources */,
 				CE3BA7872181D9AE00E1C70B /* tb_ic_shop.png in Resources */,
 				CE3BA7822181D9AE00E1C70B /* tb_ph_flag.png in Resources */,
 				CE3BA78B2181D9AE00E1C70B /* tb_ic_accelerated.png in Resources */,

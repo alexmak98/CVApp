@@ -7,8 +7,40 @@
 //
 
 import UIKit
+import AVFoundation
 
-var mainView : UIView!
+class ViewController: UIViewController, AVAudioPlayerDelegate {
+    
+    var audioPlayer : AVAudioPlayer!
+    @IBOutlet weak var tagLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    @IBAction func anyButtonTouched(_ sender: UIButton) {
+        playSound("buttonClick")
+        self.tagLabel.text = "tag:\(sender.tag)"
+    }
+    
+    func playSound(_ soundPlayed : String) {
+
+        let soundURL = Bundle.main.url(forResource: soundPlayed, withExtension:"mp3")!
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            guard let audioPlayer = audioPlayer else {return}
+
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    
+}
 
 extension UIButton {
     
@@ -45,19 +77,4 @@ extension UIButton {
     }
 }
 
-class ViewController: UIViewController {
 
-    @IBOutlet weak var testButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        mainView = self.view
-    }
-
-    @IBAction func anyButtonTouched(_ sender: UIButton) {
-        print(sender.tag)
-    }
-    
-    @IBOutlet var buttons: [UIButton]!
-    
-}
